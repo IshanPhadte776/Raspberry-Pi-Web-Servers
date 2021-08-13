@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+   <head>
+      <style>
+          body{
+             
+              background-color: Aquamarine;
+          }
+ 
+         
+          h1 {
+                  color: Black
+          }
+         
+          h2 {
+                  color: Black   
+          }
+         
+      </style>
+         <title>Daily Weather in Burlington (Daytime)</title>
+        
+            <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+            <script src="static/reFreshButton.js"></script>
+  </head>
+ 
+   <body>
+  
+   <h1 Click the button and the daily daytime weather in Burlington will show up</h1>
+  
+   <h2 id=todayTemp> The Temperature today is: </h2>
+  
+   <h2 id=tomorrowTemp> The Temperature tomorrow is:</h2>
+  
+   <h2 id=DaysFutureTemp2> The Temperature in 2 days is: </h2>
+  
+   <h2 id=DaysFutureTemp3> The Temperature in 3 days is: </h2>
+ 
+   <h2 id=DaysFutureTemp4> The Temperature in 4 days is: </h2>
+  
+   <h2 id=DaysFutureTemp5> The Temperature in 5 days is: </h2>
+  
+   <h2 id=DaysFutureTemp6> The Temperature in 6 days is: </h2>
+ 
+          
+   <button onclick="dailyWeatherBurlingtonButton()"> Update </button>
+  
+   <p class = "backToHomeLink"><a href="http://0.0.0.0:5000/"> Go Back to the Home Page</p>
+  
+ 
+          
+   </body>
+</html>

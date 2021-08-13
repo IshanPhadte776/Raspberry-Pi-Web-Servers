@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+   <head>
+      <style>
+          body{
+             
+              background-color: Aquamarine;
+          }
+ 
+         
+          h1 {
+                  color: Red
+          }
+         
+          h2 {
+                 
+              color: Black   
+          }
+         
+          p {
+             
+              color:Blue
+          }
+         
+      </style>
+         <title>Hourly Weather in Burlington</title>
+        
+            <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+            <script src="static/reFreshButton.js"></script>
+  </head>
+ 
+   <body>
+  
+   <h1 Click the button and the hourly weather in Burlington will show up</h1>
+  
+   <h2 id="nowTemp"> The Current Temperature is: </h2>
+  
+   <h2 id=HourLater1> The Temperature in 1 hour is:</h2>
+  
+   <h2 id=HourLater2> The Temperature in 2 hour is:</h2>
+  
+   <h2 id=HourLater3> The Temperature in 3 hour is:</h2>
+ 
+   <h2 id=HourLater4> The Temperature in 4 hour is:</h2>
+  
+   <h2 id=HourLater5> The Temperature in 5 hour is:</h2>
+  
+   <h2 id=HourLater6> The Temperature in 6 hour is:</h2>
+ 
+   <h2 id=HourLater7> The Temperature in 7 hour is:</h2>
+  
+   <h2 id=HourLater8> The Temperature in 8 hour is:</h2>
+  
+   <h2 id=HourLater9> The Temperature in 9 hour is:</h2>
+  
+   <h2 id=HourLater10> The Temperature in 10 hour is:</h2>
+  
+   <h2 id=HourLater11> The Temperature in 11 hour is:</h2>
+ 
+          
+   <button onclick="hourlyWeatherBurlingtonButton()"> Update </button>
+  
+   <p class = "backToHomeLink"><a href="http://0.0.0.0:5000/"> Go Back to the Home Page</p>
+  
+ 
+          
+   </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+   <head>
+      <style>
+          <!--Background colours-->
+          body{
+             
+              background-color: Aquamarine;
+          }
+          <!--Makes form links look nice-->
+          p.formLink{
+              color:green;
+              border-style:double;
+              outline-style:solid;
+              font-family: "Times New Roman", Times, serif;
+          }
+          p.burlingtonLink{
+              color:red;
+              border-style:dotted;
+              outline-style:solid;
+              font-family: "Times New Roman", Times, serif; 
+          }
+         
+          h1 {
+              color: DarkOrange;
+          }
+         
+          h2 {
+              color: Purple;  
+          }
+         
+          p.basicText {
+              color:DodgerBlue;
+              border-style:ridge;
+              outline-style:solid;
+              font-family: "Times New Roman", Times, serif;
+          }
+         
+      </style>
+         <title>Home Page</title>
+  </head>
+ 
+   <body>
+       <h1> Welcome to my Weather Flask Web Server</h1>
+       <h1> Instructions </h2>
+      
+       <h2> Current Weather Instructions<h2>
+       <p class = "basicText"> Open the Link and press the physical button. This will show and update the temperature</p>
+ 
+       <h2> Hourly/Daily Weather Instructions<h2>
+       <p class = "basicText"> Open the Link and press the HTML button. This will show and update the temperature</p>
+      
+      
+       <h2> Temperature Suggestions Instructions<h2>
+       <p class = "basicText"> Open the Link and connect to the raspberry pi.Send an MQTT publish request to weatherSuggestions/input with a given temperature. The OLED screen will print some advice for the temperature</p>
+      
+       <h1>Current Weather</h1>
+       <p class = "burlingtonLink"><a href="http://0.0.0.0:5000/currentWeatherBurlington">Get the Current Weather for Burlington Ontario Today</p>
+       <h1> Hourly Weather Forecast</h1>
+       <p class = "burlingtonLink"><a href="http://0.0.0.0:5000/hourlyWeatherBurlington">Hourly Weather Forecast for Burlington Ontario Today</p>
+       <h1> 7 Day Weather Forecast</h1>
+       <p class = "burlingtonLink"><a href="http://0.0.0.0:5000/dailyWeatherBurlington">7-Day Weather Forecast for Burlington Ontario Today</p>       
+       <h1> Suggestions for Given Temperature</h1>
+       <p class = "formLink"><a href="http://0.0.0.0:5000/weatherSuggestionsOutput">Suggestions for Given Temperature</p>
+  
+   </body>
+</html>
